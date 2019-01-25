@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.nav {
+    height: 10%;
+    width: 100%;
+}
+
+.navLeft {
+    height: 100%;
+    width: 20%;
+    background-color: dodgerblue;
+    float: left;
+}
+
+.navRight {
+    height: 100%;
+    margin: 0 0 0 10px;
+    width: calc(80% - 10px);
+    background-color: orange;
+    float: left;
+}
+
+.middle {
+    height: 50%;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.middleMain {
+    height: 100%;
+    width: 100%;
+    background-color: indianred;
+}
+
+.gridPart {
+    height: 40%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.gridOne {
+    background-color: yellow;
+}
+
+footer {
+    height: 10%;
+    width: 100%;
+    padding: 10px 0 0 0;
+}
+
+.footerMain {
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+}
+
+/*for phone*/
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .gridPart {
+        height: 40%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+    }
+
+}
+
+/*for tablets*/
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    .middle {
+        height: 40%;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+}
+
+/* for laptop and desktop*/
+@media only screen and (min-width : 1224px) {}
